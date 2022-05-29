@@ -1,0 +1,166 @@
+User@Pc MINGW64 /c
+$ git init
+Initialized empty Git repository in C:/.git/
+
+User@Pc MINGW64 /c (master)
+$ ls
+'$AV_ASW'/                  'Program Files'/
+'$Recycle.Bin'/             'Program Files (x86)'/
+'$SysReset'/                 ProgramData/
+'$WINDOWS.~BT'/              SI_2022_lab1_167001/
+'$Windows.~WS'/              SI_2022_lab2_167001/
+ 6b2d87bd743a8f807912bd3d/   SWSETUP/
+ Apache24/                  'System Volume Information'/
+ BOOTNXT                     Users/
+ BigFishCache/               Windows/
+'Documents and Settings'@    Windows.old/
+ Intel/                      bootmgr
+ MSOCache/                   hiberfil.sys
+ MagicPlusMini/              pagefile.sys
+ NPE/                        searchplugins/
+ PerfLogs/                   swapfile.sys
+
+User@Pc MINGW64 /c (master)
+$ cd SI_2022_lab2_167001
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git add --all
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git log
+commit 062644ec0cc4b850bda919ccab76c2d20f941878 (HEAD -> master, origin/master, origin/HEAD)
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:30:47 2022 +0200
+
+    Update README.md
+
+commit 70bd81df8e13f8443a6bfdf9f4e6faf69b3292f8
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:29:27 2022 +0200
+
+    Initial commit
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ ls
+README.md
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git diff
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git config --global user.name "Elena Efremovska"
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git config --global user.email elenaelektraefremovska@gmail.com
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git config --global color.ui true
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git log
+commit 062644ec0cc4b850bda919ccab76c2d20f941878 (HEAD -> master, origin/master, origin/HEAD)
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:30:47 2022 +0200
+
+    Update README.md
+
+commit 70bd81df8e13f8443a6bfdf9f4e6faf69b3292f8
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:29:27 2022 +0200
+
+    Initial commit
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ ls
+README.md
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git init
+Reinitialized existing Git repository in C:/SI_2022_lab2_167001/.git/
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git add .
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   GITbashCODE167001.txt
+
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git commit -m 'Tekstualen fajl za pisaniot kod vo GIT bash'
+[master adaad04] Tekstualen fajl za pisaniot kod vo GIT bash
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 GITbashCODE167001.txt
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git remote add origin 'https://github.com/EElenaEE/SI_2022_lab2_167001'
+error: remote origin already exists.
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: This repository moved. Please use the new location:
+remote:   https://github.com/EElenaEE/SI_2022_lab2_167001.git
+To https://github.com/eelenaee/SI_2022_lab2_167001
+   062644e..adaad04  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
+$ git log
+commit adaad0488fef303eec3499edcdf19bdd9206cee1 (HEAD -> master, origin/master, origin/HEAD)
+Author: Elena Efremovska <elenaelektraefremovska@gmail.com>
+Date:   Sun May 29 22:08:06 2022 +0200
+
+    Tekstualen fajl za pisaniot kod vo GIT bash
+
+commit 062644ec0cc4b850bda919ccab76c2d20f941878
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:30:47 2022 +0200
+
+    Update README.md
+
+commit 70bd81df8e13f8443a6bfdf9f4e6faf69b3292f8
+Author: Elena Efremovska <102921986+EElenaEE@users.noreply.github.com>
+Date:   Sun May 29 21:29:27 2022 +0200
+
+    Initial commit
+
+User@Pc MINGW64 /c/SI_2022_lab2_167001 (master)
