@@ -1,7 +1,8 @@
 # SI_2022_lab2_167001
  This is a remote repository
 # Elena Efremovska 167001 
-## Zadacha 1 SILab2.java
+## Zadacha 1 
+## SILab2.java
 ### Funkcijata vo Java kodot dava: 
 #### za vlez niza od 0 i '#'
 #### izlez niza od 0 i broevi
@@ -51,3 +52,6 @@ public class SILab2 {
 }
 '''
 ## Pretstavuvanje na funkcijata
+** 
+## Zadacha 2
+### Control Flow Graph
