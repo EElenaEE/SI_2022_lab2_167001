@@ -56,4 +56,5 @@ public class SILab2 {
 ### Ciklomatska kompleksnost na daden kod
 ## Zadacha 4
 ### Test sluchai spored Every statement kriterium
-
+## Zadacha 5
+### Test sluchai spored Every Branch kriterium
