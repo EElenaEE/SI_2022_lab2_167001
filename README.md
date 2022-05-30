@@ -52,3 +52,8 @@ public class SILab2 {
 '''
 ## Zadacha 2
 ### Control Flow Graph
+## Zadacha 3
+### Ciklomatska kompleksnost na daden kod
+## Zadacha 4
+### Test sluchai spored Every statement kriterium
+
