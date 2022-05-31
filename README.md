@@ -52,7 +52,8 @@ public class SILab2 {
 '''
 ## Zadacha 2
 ### Control Flow Graph!
-[Uploading CFG.jpg…]()
+![Control Flow Graph Za Java Kod](https://user-images.githubusercontent.com/102921986/171273170-6894ea50-7dea-47fe-a739-7523a4135d14.png)
+
 ### Pregled na izvrshuvanje naredbi
 
 
