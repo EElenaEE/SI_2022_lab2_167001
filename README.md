@@ -58,8 +58,14 @@ public class SILab2 {
 
 
 ## Zadacha 3
-### Ciklomatska kompleksnost na daden kod
+### Ciklomatska kompleksnost na daden kod 
+### kompleksnost = Broj + 1 C = 5
+
 ## Zadacha 4
 ### Test sluchai spored Every statement kriterium
+#### '    [], [‘#’,0,’#’]     '
 ## Zadacha 5
 ### Test sluchai spored Every Branch kriterium
+#### '     [], [‘#’, 0, ’#’], [0, ‘#’, 0], [0, 0]    '
+## Komentar
+#### Za Every Statement, izberi vrednosti sekoja linija da se aktivira. Zа Multiple Condition vrednostite treba da dadat site mozni kombinacii za vistinskivrednosti koi imaat logichka smisla. 
