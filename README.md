@@ -68,4 +68,4 @@ public class SILab2 {
 ### Test sluchai spored Every Branch kriterium
 #### '     [], [‘#’, 0, ’#’], [0, ‘#’, 0], [0, 0]    '
 ## Komentar
-#### Za Every Statement, izberi vrednosti sekoja linija da se aktivira. Zа Multiple Condition vrednostite treba da dadat site mozni kombinacii za vistinskivrednosti koi imaat logichka smisla. 
+#### Za Every Statement, izberi vrednosti sekoja linija da se aktivira. Zа Multiple Condition vrednostite treba da dadat site mozni kombinacii za vistins kivrednosti koi imaat logichka smisla. 
