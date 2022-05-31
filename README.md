@@ -51,7 +51,11 @@ public class SILab2 {
 }
 '''
 ## Zadacha 2
-### Control Flow Graph
+### Control Flow Graph!
+[Uploading CFG.jpg…]()
+### Pregled na izvrshuvanje naredbi
+
+
 ## Zadacha 3
 ### Ciklomatska kompleksnost na daden kod
 ## Zadacha 4
