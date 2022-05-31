@@ -1,0 +1,89 @@
+#
+# Gradle turbo.me file
+# https://github.com/turboapps/turbome/tree/master/gradle/stable/turbo.me
+#
+# Created with Turbo CMD version 1.4.1106.0
+#
+# Licensed under the Apache License, Version 2.0
+# http://www.apache.org/licenses/LICENSE-2.0
+
+###################################
+# Meta tags
+###################################
+
+meta title="Gradle"
+meta namespace="gradle"
+meta name="gradle"
+
+###################################
+# Pull dependency images
+###################################
+
+using gnu/wget,7-zip/7-zip,python/python:3.4.1
+
+
+###################################
+# Download and install
+###################################
+
+# Set working directory
+cmd mkdir c:\Workspace
+workdir c:\Workspace
+
+# Get URL from web
+cmd pip install requests --quiet
+
+batch
+  echo import requests >> getUrl.py
+  echo import re >> getUrl.py
+  echo host = 'http://gradle.org/gradle-download/' >> getUrl.py
+  echo headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0'} >> getUrl.py
+  echo r = requests.get(host , headers=headers, timeout=10) >> getUrl.py
+  echo print(list(re.findall('(https://\S*?(\d*\.*\d*\.*\d*)-bin.zip)', r.text )[0])) >> getUrl.py
+
+cmd python getUrl.py
+var res=last
+
+cmd "python -c ""print( %res% [0])"""
+var url=last
+
+cmd "python -c ""print( %res% [1])"""
+var version=last
+
+# Download
+
+cmd "wget --no-check-certificate --no-verbose -O gradle.zip %url%"
+
+# Unpack
+cmd 7z x gradle.zip -oc:\gradle
+
+
+###################################
+# Environment Variables
+###################################
+
+env path="c:\gradle\gradle-" + version + "\bin"
+
+
+###################################
+# Clean up
+###################################
+
+workdir c:\
+
+cmd rmdir c:\Workspace /s /q
+cmd rmdir C:\wget /s /q
+cmd rmdir C:\python34 /s /q
+
+###################################
+# Version
+###################################
+
+meta tag=version
+meta version=version
+
+###################################
+# Startup File
+###################################
+
+startup file ("cmd","/k echo Gradle version: ", version)
