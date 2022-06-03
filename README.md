@@ -52,7 +52,8 @@ public class SILab2 {
 '''
 ## Zadacha 2
 ### Ova e Grafot za Java funkcijata !
-![SI_lab2](https://user-images.githubusercontent.com/102921986/171959066-5b399a59-bd5b-4517-be1f-3b5020445f13.png)
+![SI_lab2](https://user-images.githubusercontent.com/102921986/171959331-aad14724-4b70-4302-bbf6-73c92f811659.png)
+
 
 ### Control Flow Graph!
 ![Control Flow Graph Za Java Kod](https://user-images.githubusercontent.com/102921986/171273170-6894ea50-7dea-47fe-a739-7523a4135d14.png)
