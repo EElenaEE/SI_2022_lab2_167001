@@ -63,13 +63,20 @@ public class SILab2 {
 
 ## Zadacha 3
 ### Ciklomatska kompleksnost na daden kod 
-### kompleksnost = Broj + 1 C = 5
+### kompleksnost = rebra - jazli + 2  = 31 -25 +2 = 8
 
 ## Zadacha 4
-### Test sluchai spored Every statement kriterium
-#### '    [], [‘#’,0,’#’]     '
+### Test sluchai spored Every statement kriterium 25 statements
+####      Test case '#1': Input empty list, Output "List length should be greather than 0". Gi dava statements:1,2,3,23
+####      Test case '#2': Input 0,0,0,0,0,0,0,0 , Output "List length should be a perfect square" Gi ima :1,2,4,5,6,7,23. 
+####      Test case '#3': Input 0,#,0,#,0,#,#,#,0,Nema exceptions, Output е 2,#,2,#,4,#,#,#,2. Gi ima:1,2,4,5,6,8,9.1,9.2,9.3,10,11,12,13,14,15,16,17,18,19,20,21,22,23.
 ## Zadacha 5
 ### Test sluchai spored Every Branch kriterium
-#### '     [], [‘#’, 0, ’#’], [0, ‘#’, 0], [0, 0]    '
+#### Ima 31 branches 
+#### Test case #1: Input empty list, Output "List length should be greather than 0" Gi ima branches:1-2,2-3,3-23.
+#### Test case #2: Input 0,0,0,0,0,0,0,0 , Output "List length should be a perfect square". Gi ima branches:1-2,2-4,4-5,5-6,6-7,7-23. 
+#### Test case #3: Input 0,#,0,#,0,#,#,0,#,  Nema exceptions, Output е 2,#,2,#,3,#,#,2,#. Gi ima branches:1-2,2-4,4-5,5-6,6-8,8-9.1,9.1-9.2,9.2-10,9.2-21,10-11,10-20,11-12,12-13,12-14,13-15,14-15,15-16,15-17,16-17,17-18,17-19,18-19,19-21,20-21,21-9.3,9.3-9.2,21-22,22-23.
+
+Releases
 ## Komentar
 #### Za Every Statement, izberi vrednosti sekoja linija da se aktivira. Zа Multiple Condition vrednostite treba da dadat site mozni kombinacii za vistins kivrednosti koi imaat logichka smisla. 
